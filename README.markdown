@@ -1,7 +1,9 @@
 Hardware required:
+
 1. A Mac (it's possible without one, but from what I've seen, it's pretty difficult to get working.)
 
 Software required (all free):
+
 1. OS X 10.6+
 2. [Sublime Text](http://www.sublimetext.com/2) or another text editor
 3. [Ruby on Rails](http://railsinstaller.org/en) obviously
