@@ -84,7 +84,7 @@ Uploading ssh public key /Users/michaelsnowden/.ssh/id_rsa.pub
 ```bash
 $ heroku create
 Creating cryptic-eyrie-5775... done, stack is cedar-14
-https://cryptic-eyrie-5775.herokuapp.com/ | https://git.heroku.com/cryptic-eyrie-5775.git
+https://pure-shore-6539.herokuapp.com/ | https://git.heroku.com/pure-shore-6539.git
 Git remote heroku added
 ```
 
@@ -97,7 +97,7 @@ remote: Building source:
 remote:
 ...
 remote: Verifying deploy... done.
-To https://git.heroku.com/cryptic-eyrie-5775.git
+To https://git.heroku.com/pure-shore-6539.git
 ```
 
 ##### Visit the page
