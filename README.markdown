@@ -7,7 +7,7 @@ Software required (all free):
 1. OS X 10.6+
 2. [Sublime Text](http://www.sublimetext.com/2) or another text editor
 3. [Ruby on Rails](http://railsinstaller.org/en) obviously
-4. [Postgres.app](http://postgresapp.com/) for making sure
+4. [Postgres.app](http://postgresapp.com/) for your database
 
 Create your RoR application
 
