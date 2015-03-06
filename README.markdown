@@ -42,23 +42,23 @@ In file config/routes.rb, on line 2 add:
 ```ruby
   root 'welcome#index'
 ```
-Make sure you've created your database
+##### Make sure you've created your database
 
 ```bash
 $ rake db:create
 ```
 
-And start up your server!
+##### And start up your server!
 
 ```
 $ rails server
 ```
-Now visit [your local server](http://localhost:3000/)
+##### Now visit [your local server](http://localhost:3000/)
 
 It should look pretty cool...
 ![Hella Sick Website](http://i59.tinypic.com/elqma.png)
 
-The git stuff is all really easy
+##### Initialize some source control with git
 
 ```bash
 $ git init
@@ -66,7 +66,7 @@ $ git add .
 $ git commit -m "init"
 ```
 
-Login to Heroku
+##### Login to Heroku
 
 ```bash
 $ heroku login
@@ -79,7 +79,7 @@ Generating new SSH public key.
 Uploading ssh public key /Users/michaelsnowden/.ssh/id_rsa.pub
 ```
 
-Create a git remote for heroku
+##### Create a git remote for heroku
 
 ```bash
 $ heroku create
@@ -88,7 +88,7 @@ https://cryptic-eyrie-5775.herokuapp.com/ | https://git.heroku.com/cryptic-eyrie
 Git remote heroku added
 ```
 
-Deploy all your code to Heroku (you will repeat this each time you make a change that you want to put on the website)
+##### Deploy all your code to Heroku (you will repeat this each time you make a change that you want to put on the website)
 
 ```bash
 $ git push heroku master
@@ -100,10 +100,10 @@ remote: Verifying deploy... done.
 To https://git.heroku.com/cryptic-eyrie-5775.git
 ```
 
-Visit the page
+##### Visit the page
 
 ```bash
 $ heroku open
 ```
 
-[Get started with some Ruby on Rails guides!](http://edgeguides.rubyonrails.org/getting_started.html)
+##### [Get started with some Ruby on Rails guides!](http://edgeguides.rubyonrails.org/getting_started.html)
