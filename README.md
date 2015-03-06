@@ -1,12 +1,13 @@
 Hardware required:
-A Mac
+1. A Mac (it's possible without one, but from what I've seen, it's pretty difficult to get working.)
 
 Software required (all free):
-OS X 10.6+
-[Sublime Text](http://www.sublimetext.com/2) or another text editor
-[Ruby on Rails](http://railsinstaller.org/en) obviously
-[Postgres.app](http://postgresapp.com/)
+1. OS X 10.6+
+2. [Sublime Text](http://www.sublimetext.com/2) or another text editor
+3. [Ruby on Rails](http://railsinstaller.org/en) obviously
+4. [Postgres.app](http://postgresapp.com/) for making sure
 
+Login to Heroku
 
 ```bash
 $ heroku login
@@ -19,21 +20,25 @@ Generating new SSH public key.
 Uploading ssh public key /Users/adam/.ssh/id_rsa.pub
 ```
 
+Create your RoR application
+
 ```bash
 $ rails new myapp --database=postgresql
 ```
+
+Change into your app directory
 
 ```bash
 $ cd myapp
 ```
 
-```bash
-$ bundle install
-```
+Create a controller to handle URL requests
 
 ```bash
 $ rails generate controller welcome
 ```
+
+##### Create the welcome page view
 
 In file app/views/welcome/index.html.erb write:
 
@@ -51,8 +56,10 @@ In file config/routes.rb, on line 2 add:
 Make sure you've created your database
 
 ```bash
-rake db:create
+$ rake db:create
 ```
+
+And start up your server!
 
 ```
 $ rails server
@@ -89,4 +96,10 @@ remote:
 ...
 remote: Verifying deploy... done.
 To https://git.heroku.com/cryptic-eyrie-5775.git
+```
+
+Visit the page
+
+```bash
+$ heroku open
 ```
