@@ -1,27 +1,27 @@
-Hardware required:
+##### Hardware required:
 
-1. A Mac (it's possible without one, but from what I've seen, it's pretty difficult to get working.)
+1. A Mac or a PC. If you have a PC, then this guide probably won't work for you, but go ahead and use [Rails Installer](http://railsinstaller.org/en) and find out. 
 
-Software required (all free):
+##### Software required (all free):
 
 1. OS X 10.6+
 2. [Sublime Text](http://www.sublimetext.com/2) or another text editor
-3. [Ruby on Rails](http://railsinstaller.org/en) obviously
+3. [Ruby on Rails](https://github.com/tokaido/tokaidoapp) obviously
 4. [Postgres.app](http://postgresapp.com/) for your database
 
-Create your RoR application
+##### Create your RoR application
 
 ```bash
 $ rails new myapp --database=postgresql
 ```
 
-Change into your app directory
+##### Change into your app directory
 
 ```bash
 $ cd myapp
 ```
 
-Create a controller to handle URL requests
+##### Create a controller for the homepage (it shouldn't contain any code)
 
 ```bash
 $ rails generate controller welcome
@@ -71,15 +71,15 @@ Login to Heroku
 ```bash
 $ heroku login
 Enter your Heroku credentials.
-Email: schneems@example.com
+Email: example@example.com
 Password:
 Could not find an existing public key.
 Would you like to generate one? [Yn]
 Generating new SSH public key.
-Uploading ssh public key /Users/adam/.ssh/id_rsa.pub
+Uploading ssh public key /Users/michaelsnowden/.ssh/id_rsa.pub
 ```
 
-Deploy to Heroku
+Create a git remote for heroku
 
 ```bash
 $ heroku create
@@ -88,7 +88,7 @@ https://cryptic-eyrie-5775.herokuapp.com/ | https://git.heroku.com/cryptic-eyrie
 Git remote heroku added
 ```
 
-Deploy all your code changes to Heroku (you will repeat this each time you make a change that you want to put on the website)
+Deploy all your code to Heroku (you will repeat this each time you make a change that you want to put on the website)
 
 ```bash
 $ git push heroku master
@@ -106,4 +106,4 @@ Visit the page
 $ heroku open
 ```
 
-[Get started with some Ruby on Rails guides!](http://guides.rubyonrails.org/v3.2.13/getting_started.html)
+[Get started with some Ruby on Rails guides!](http://edgeguides.rubyonrails.org/getting_started.html)
