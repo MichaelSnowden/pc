@@ -9,19 +9,6 @@ Software required (all free):
 3. [Ruby on Rails](http://railsinstaller.org/en) obviously
 4. [Postgres.app](http://postgresapp.com/) for making sure
 
-Login to Heroku
-
-```bash
-$ heroku login
-Enter your Heroku credentials.
-Email: schneems@example.com
-Password:
-Could not find an existing public key.
-Would you like to generate one? [Yn]
-Generating new SSH public key.
-Uploading ssh public key /Users/adam/.ssh/id_rsa.pub
-```
-
 Create your RoR application
 
 ```bash
@@ -71,7 +58,7 @@ Now visit [your local server](http://localhost:3000/)
 It should look pretty cool...
 ![Hella Sick Website](http://i59.tinypic.com/elqma.png)
 
-Time to do git stuff
+The git stuff is all really easy
 
 ```bash
 $ git init
@@ -79,7 +66,20 @@ $ git add .
 $ git commit -m "init"
 ```
 
-Deploying to Heroku
+Login to Heroku
+
+```bash
+$ heroku login
+Enter your Heroku credentials.
+Email: schneems@example.com
+Password:
+Could not find an existing public key.
+Would you like to generate one? [Yn]
+Generating new SSH public key.
+Uploading ssh public key /Users/adam/.ssh/id_rsa.pub
+```
+
+Deploy to Heroku
 
 ```bash
 $ heroku create
@@ -88,7 +88,7 @@ https://cryptic-eyrie-5775.herokuapp.com/ | https://git.heroku.com/cryptic-eyrie
 Git remote heroku added
 ```
 
-Deploy the code
+Deploy all your code changes to Heroku (you will repeat this each time you make a change that you want to put on the website)
 
 ```bash
 $ git push heroku master
@@ -105,3 +105,5 @@ Visit the page
 ```bash
 $ heroku open
 ```
+
+[Get started with some Ruby on Rails guides!](http://guides.rubyonrails.org/v3.2.13/getting_started.html)
